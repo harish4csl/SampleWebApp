@@ -3,78 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-            transition: background 0.3s, color 0.3s;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-        }
-        .post {
-            margin: 20px 0;
-        }
-        .post img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .post h2 {
-            color: #444;
-        }
-        .dark-mode {
-            background: #222;
-            color: white;
-        }
-        .toggle-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #333;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
+    <title>NextGEN IT - Learn. Innovate. Excel.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <header>
-        <h1>Welcome to My Blog</h1>
+        <nav>
+            <h1>NextGEN IT</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <div class="post">
-            <img src="https://source.unsplash.com/900x400/?technology,code" alt="Blog Post Image">
-            <h2>How to Become a Frontend Developer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna...</p>
+
+    <section class="hero">
+        <h2>Empowering Future IT Leaders</h2>
+        <p>Learn the latest in Cloud, DevOps, and Networking from experts.</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>NextGEN IT is dedicated to providing hands-on IT training to help professionals and students achieve excellence.</p>
+        <img src="https://img.freepik.com/free-photo/it-programmer-working-with-laptop-computer_1098-18725.jpg" alt="IT Training Classroom">
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>AWS Cloud Basics</h3>
+                <p>Master AWS services and infrastructure.</p>
+                <img src="https://img.freepik.com/free-photo/cloud-computing-concept-with-person-using-laptop_23-2149220460.jpg" alt="AWS Cloud Basics">
+            </div>
+            <div class="course">
+                <h3>DevOps & CI/CD</h3>
+                <p>Automate and streamline development workflows.</p>
+                <img src="https://img.freepik.com/free-photo/devops-concept-with-person-using-computer_23-2149389604.jpg" alt="DevOps & CI/CD">
+            </div>
+            <div class="course">
+                <h3>Networking Fundamentals</h3>
+                <p>Understand networking essentials for IT professionals.</p>
+                <img src="https://img.freepik.com/free-photo/networking-concept-with-person-using-laptop_23-2149220459.jpg" alt="Networking Fundamentals">
+            </div>
         </div>
-        <div class="post">
-            <img src="https://source.unsplash.com/900x400/?writing,blog" alt="Blog Post Image">
-            <h2>10 Tips for Writing a Great Blog Post</h2>
-            <p>Donec at dictum urna. Sed imperdiet, risus id bibendum ultricies, metus sapien interdum purus...</p>
-        </div>
-    </div>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Students Say</h2>
+        <p>“NextGEN IT transformed my career! Their hands-on approach and expert mentors are outstanding.” – Rajesh K.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 NextGEN IT. All rights reserved.</p>
+    </footer>
 </body>
 </html>
